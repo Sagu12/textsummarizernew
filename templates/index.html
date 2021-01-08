@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Text Summarization</title>
+	<style>
+
+		*, *:before, *:after{
+			margin: 0;
+			padding: 0;
+			border: 0;
+			box-sizing: border-box;
+		}
+
+		body{
+			font-size: 1.25rem;
+			background: #ddd;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		.container{
+			min-height: 80vh;
+			width: 80vw;
+			max-width: 800px;
+			min-width: 400px;
+			margin: 5rem auto;
+			text-align: center;
+			color: #333;
+			font-size: 1.25rem;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items:stretch;
+			background: #fff;
+			box-shadow: 2px 3px 4px #3333330f;
+			padding: 2rem;
+			border-radius: 10px;
+		}
+
+		input[type="url"] {
+			padding: 0.75rem;
+			width: 80%;
+			border-radius: 5px;
+			font-size: 1.25rem;
+			margin: 1rem;
+			border: 1px solid #ddddddf3;
+			box-shadow: 1px 3px 3px #aaaaaaf3;
+		}
+
+		input[type="submit"] {
+			padding: 0.75rem;
+			background: dodgerblue;
+			border-radius: 5px;
+			font-size: 1.25rem;
+			margin: 1rem;
+			color: #fff;
+			cursor: pointer;
+			box-shadow: 1px 3px 3px #aaaaaaf3;
+		}
+		h1{
+			margin: 3rem;
+		}
+		form{
+			padding: 3rem;
+		}
+		p { line-height: 2rem;}
+	</style>
+</head>
+<body bgcolor="#333">
+	<div class="container">
+		<h1>Welcome to Text Summarizer</h1>
+		<p>I will help you summarize your text with ease.<br/> Just enter your url below</p>
+		<div>
+			<form method="POST">
+				<input type="url" name="url" id="url" placeholder="Enter URL" autocomplete="url">
+				<input type="submit" name="submit" id="submit">
+			</form>
+		</div>
+	</div>
+</body>
+</html>
