@@ -1,0 +1,5 @@
+Flask==1.1.2
+nltk==3.5
+newspaper3k==0.2.8
+newspaper==0.1.0.7
+gunicorn==20.0.4
